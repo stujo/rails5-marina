@@ -31,6 +31,7 @@ gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -42,6 +43,13 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'rails-controller-testing'
 end
+
+
+group :development, :test do
+  gem 'dotenv'
+end
+
+gem 'simplecov', :require => false, :group => :test
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.

@@ -13,8 +13,10 @@
     <div class="header-menu-right"><%= link_to('login') %> | <%= link_to('register') %></div>
     <div class="header-brand">Marina Athena</div>
     </header>
-    <%= page_heading %>
-    <%= yield %>
+      <% if @page_title %>
+        <h1 class=\"page-heading\"><%= @page_title %></h1>
+      <% end %>
+      <%= yield %>
     <footer class="footer-fixed-bottom">Copyright <%= Time.now.year %> Marina Athena</footer>
   </body>
 </html>
