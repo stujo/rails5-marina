@@ -31,6 +31,7 @@ gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -41,6 +42,11 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'rails-controller-testing'
+end
+
+
+group :development, :test do
+  gem 'dotenv'
 end
 
 group :development do
