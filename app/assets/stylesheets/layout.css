@@ -1,0 +1,56 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: #eee;
+	color: #333;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+
+.header-fixed-top {
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	height: 3em;
+	background-color: #bbf;
+	display: block;
+	border-bottom: 1px solid #333;
+}
+
+.header-menu-right{
+	float: right;
+	height: 100%;
+	width: 200px;
+	font-size: 1.5em;
+	line-height: 2em;
+	margin: 0;
+	padding: 0 0.25em 0 0;
+	text-align: right;
+}
+
+.header-brand {
+	font-size: 1.5em;
+	line-height: 2em;
+	color: #fff;
+}
+
+
+.footer-fixed-bottom {
+    bottom: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	height: 2em;
+	background-color: #eee;
+	display: block;
+	font-size: 0.5em;
+	line-height: 2em;
+	text-align: center;
+	border-top: 1px solid #333;
+}
