@@ -4,11 +4,11 @@ RSpec.describe "boats/index", type: :view do
   before(:each) do
     assign(:boats, [
       Boat.create!(
-        :name => "Name",
+        :name => "Name1",
         :description => "MyText"
       ),
       Boat.create!(
-        :name => "Name",
+        :name => "Name2",
         :description => "MyText"
       )
     ])
@@ -16,7 +16,7 @@ RSpec.describe "boats/index", type: :view do
 
   it "renders a list of boats" do
     render
-    assert_select "tr>td", :text => "Name".to_s, :count => 2
+    assert_select "tr>td", :text => "Name1".to_s, :count => 1
     assert_select "tr>td", :text => "MyText".to_s, :count => 2
   end
 end

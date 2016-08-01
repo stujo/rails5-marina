@@ -24,11 +24,11 @@ RSpec.describe BoatsController, type: :controller do
   # Boat. As you add validations to Boat, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    {name: 'Topsy', description: 'Nice Boat', length: 10.6 }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {name: '', description: 'Nice Boat', length: 10.6 }
   }
 
   # This should return the minimal set of values that should be in the session
@@ -103,14 +103,14 @@ RSpec.describe BoatsController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+         {name: 'Tapsy', description: 'Nice Big Boat', length: 100.6 }
       }
 
       it "updates the requested boat" do
         boat = Boat.create! valid_attributes
         put :update, params: {id: boat.to_param, boat: new_attributes}, session: valid_session
         boat.reload
-        skip("Add assertions for updated state")
+        expect(boat.description).to eq('Nice Big Boat')
       end
 
       it "assigns the requested boat as @boat" do

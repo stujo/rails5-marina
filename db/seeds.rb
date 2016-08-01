@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Boat.create!(:name => 'Tipsy', :length => 10.5, :description => 'A lovely little cruiser')
