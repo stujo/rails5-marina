@@ -1,8 +1,10 @@
 class WeatherContainer extends React.Component {
-  constructor() {
-    super();
-    this.state = { comments: [] }
+  constructor(props){
+    super(props)
+    this.state = this.state || {}
+    this.state.weather = this.state.weather || []
   }
+
   componentDidMount() {
     $.ajax({
       url: "/weather.json",
@@ -13,10 +15,6 @@ class WeatherContainer extends React.Component {
     });
   }
   render() {
-  	if(this.state.weather){
-      return (<Weather title="Weather" details={this.state.weather} />);
-    } else {
-      return (<div className="loading"></div>);
+    return (<Weather title="Weather" details={this.state.weather} />);
   }
-}
 }
