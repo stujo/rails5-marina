@@ -10,7 +10,7 @@ module WeatherHelper
 	    Unirest.get(url).body.tap do |res|
 	      res[:timestamp] = Time.now
 	    end
-    end
+     end
 
   end
 

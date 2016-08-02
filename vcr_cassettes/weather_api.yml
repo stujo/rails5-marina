@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/weather?APPID=9cee13a53f9647345bcb59c413cffb80&zip=98101,us
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - unirest-ruby/1.0
+      Host:
+      - api.openweathermap.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Tue, 02 Aug 2016 21:23:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '449'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?APPID=9cee13a53f9647345bcb59c413cffb80&zip=98101,us"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-122.33,"lat":47.61},"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"base":"cmc stations","main":{"temp":291.5,"pressure":1021,"humidity":59,"temp_min":289.15,"temp_max":295.37},"wind":{"speed":2.1,"deg":20},"rain":{"1h":0.51},"clouds":{"all":75},"dt":1470172389,"sys":{"type":1,"id":2949,"message":0.0123,"country":"US","sunrise":1470142199,"sunset":1470195603},"id":5809844,"name":"Seattle","cod":200}'
+    http_version: 
+  recorded_at: Tue, 02 Aug 2016 21:23:54 GMT
+recorded_with: VCR 3.0.3

@@ -50,6 +50,8 @@ end
 
 group :development, :test do
   gem 'dotenv'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 gem 'simplecov', :require => false, :group => :test
