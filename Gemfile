@@ -33,6 +33,8 @@ gem 'jquery-rails'
 
 gem 'react-rails'
 
+gem 'browserify-rails'
+
 gem 'unirest'
 
 group :development, :test do
