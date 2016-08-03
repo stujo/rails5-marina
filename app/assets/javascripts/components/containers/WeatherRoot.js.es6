@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom'
 import { Provider } from 'react-redux';
-import WeatherContainer from './WeatherContainer';
-import configureStore from '../store/configureStore';
-import {setCounter} from '../actions/counter'
+import WeatherContainer from './WeatherContainer.js.es6';
+import configureStore from '../store/configureStore.js.es6';
 
 const store = configureStore();
 
 export default class WeatherRoot extends Component {
-  componentWillMount() {
-    store.dispatch(setCounter(this.props.counter));
-  }
   render() {
     return (
       <Provider store={store}>

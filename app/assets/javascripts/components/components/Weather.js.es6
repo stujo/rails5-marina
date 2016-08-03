@@ -1,4 +1,4 @@
-function Weather(props){
+export default function Weather(props){
 
   function details(){
 	 if(props.details){
