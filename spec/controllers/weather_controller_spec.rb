@@ -7,9 +7,9 @@ RSpec.describe WeathersController, type: :controller do
   describe "GET #show" do
     it "returns http success" do
 
-      VCR.use_cassette('weather_api', :record => :all) do
+      VCR.use_cassette('weather_api', :record => :new_episodes) do
         get :show, {:format => :json}
-        expect(JSON.parse(response.body)["weather"][0]["description"]).to eq('light rain')
+        expect(JSON.parse(response.body)["weather"][0]["description"]).to eq('clear sky')
       end
 
     end
