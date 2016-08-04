@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom'
 import { Provider } from 'react-redux';
-import WeatherContainer from './WeatherContainer.js.es6';
-import configureStore from '../store/configureStore.js.es6';
+import WeatherContainer from './WeatherContainer.es6';
+import configureStore from '../store/configureStore.es6';
 
 const store = configureStore();
 

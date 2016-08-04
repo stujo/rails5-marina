@@ -1,4 +1,4 @@
-import Weather from '../components/Weather.js.es6';
+import Weather from '../components/Weather.es6';
 
 export default class WeatherContainer extends React.Component {
   constructor(props){

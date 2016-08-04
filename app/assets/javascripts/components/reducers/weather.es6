@@ -1,4 +1,4 @@
-import { WEATHER_REQUESTED, WEATHER_LOADED, WEATHER_ERRORED } from '../actions/weather.js.es6';
+import { WEATHER_REQUESTED, WEATHER_LOADED, WEATHER_ERRORED } from '../actions/weather.es6';
 
 export default function weather(state = {}, action) {
   switch (action.type) {
