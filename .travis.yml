@@ -5,10 +5,12 @@ addons:
   postgresql: "9.4"
 before_install:
   - rvm install 2.2.3
+  - gem install bundler
 install:
   - npm -v
   - npm install
 before_script:
+  - bundle install
   - psql -c 'create database marina_test;' -U postgres
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
