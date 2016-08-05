@@ -10,7 +10,7 @@ export default function weather(state = {}, action) {
     return { 
     	pending: false,
     	errored: false,
-    	details: action.details
+    	data: action.data
     };
   default:
     return state;

@@ -2,10 +2,10 @@ export default function Weather(props){
 
   function details(){
 
-	 if( props.details && props.details.length > 0 ){
+	 if( props.weather && props.weather.weather && props.weather.weather[0] ){
 	    return (
 	    	<div className="details">
-	    	  { props.details[0].description }
+	    	  { props.weather.weather[0].description }
 	    	</div>
 	    	);
 	 } else {
