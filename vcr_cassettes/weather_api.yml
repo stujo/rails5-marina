@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/weather?APPID=FAKE_WEATHER_APP_ID&zip=98101,us
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - unirest-ruby/1.0
+      Host:
+      - api.openweathermap.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 04 Aug 2016 01:01:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '443'
+      X-Cache-Key:
+      - "/data/2.5/weather?APPID=FAKE_WEATHER_APP_ID&zip=98101,us"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      X-Cache:
+      - MISS from mE0553D11CFA0
+      X-Cache-Lookup:
+      - MISS from mE0553D11CFA0:3128
+      Via:
+      - 1.1 mE0553D11CFA0 (squid/3.3.5)
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-122.33,"lat":47.61},"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"base":"cmc stations","main":{"temp":294.34,"pressure":1022,"humidity":56,"temp_min":288.71,"temp_max":297.04},"wind":{"speed":2.06,"deg":14,"gust":5.65},"clouds":{"all":0},"dt":1470272087,"sys":{"type":3,"id":9628,"message":0.0032,"country":"US","sunrise":1470315089,"sunset":1470368300},"id":5809844,"name":"Seattle","cod":200}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 01:01:39 GMT

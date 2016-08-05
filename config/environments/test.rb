@@ -3,6 +3,9 @@ Rails.application.configure do
 
   config.react.variant = :test
 
+  #Disable cache in test (I thought this was the default? but doesn't seem to be)
+  config.cache_store = :null_store
+
   # The test environment is used exclusively to run your application's
   # test suite. You never need to work with it otherwise. Remember that
   # your test database is "scratch space" for the test suite and is wiped

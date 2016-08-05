@@ -33,6 +33,10 @@ gem 'jquery-rails'
 
 gem 'react-rails'
 
+gem 'browserify-rails'
+
+gem 'unirest'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -43,11 +47,14 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'rails-controller-testing'
+  gem 'capybara'
+  gem 'poltergeist'
 end
-
 
 group :development, :test do
   gem 'dotenv'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 gem 'simplecov', :require => false, :group => :test

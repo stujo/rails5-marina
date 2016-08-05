@@ -1,7 +1,9 @@
 class WeathersController < ApplicationController
 
+  include WeatherHelper
+
   def show
-      render json: {weather: 'Sunny'}
+    render json: seattle_weather
   end
 
 end
