@@ -1,10 +1,22 @@
+import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import Weather from '../components/Weather.es6';
+import {fetchWeather} from '../actions/weather.es6';
 
 
-export function WeatherContainerImpl(props){
-    return (<Weather title="Weather" weather={props.weather} />);
+
+export default class WeatherContainerImpl extends Component {
+  
+  render() {
+    return (<Weather title="Weather" weather={this.props.weather} />);
+  }
+
+  componentDidMount(){
+     this.props.dispatch(fetchWeather());
+  }
 }
+
+
 
 const mapStateToProps = (state, ownProps) => {
   return {
