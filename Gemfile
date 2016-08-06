@@ -31,7 +31,7 @@ gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'react-rails'
+gem 'react-rails', '1.5'
 
 gem 'browserify-rails'
 
